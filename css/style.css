@@ -1,11 +1,19 @@
 body{color: #333333;font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';}
 #fp-nav ul li a span{background: #6FA876;}
+cf:after{content: ''; display: block; clear:both;}
 
-header{ position: fixed; left: 0; right: 0; top: 0; z-index: 100; height: 100px;}
-header nav ul{display: flex; justify-content: center; list-style: none;}
-header nav ul li{margin: 0 20px;}
-#site_map{margin-top: 30px; margin-left: 30px; display: inline-block;}
-#site_map>a>span{width: 30px; height: 4px; background: #333333; display: block; margin-bottom: 5px;}
+header #nav{background: #47754d; height: 100vh; width: 200px; position: fixed; top: 0; left: 0; z-index: 1; display: none;}
+header #nav.open{display: block;}
+header #nav ul{list-style: none; height: 100vh; display: flex; flex-direction: column; justify-content: space-evenly;}
+header #nav ul li{margin: 0 20px;}
+header #nav ul li a{text-decoration: none; color: #fff; font-size: 1.2em; font-family: 'Open Sans', sans-serif; display: block; width: 100%;}
+header #nav ul li a:hover{ color: #97cc9d}
+#site_map{z-index: 2; position: absolute; top: 20px; left: 20px;}
+#site_map>a{display: block; width: 100%;}
+#site_map>a>span{width: 35px; height: 4px; background: #333333; display: block; margin-bottom: 6px; }
+#site_map.active>a>span:nth-child(1){transform: rotate(45deg); position: relative; top: 10px; background: #efefef;}
+#site_map.active>a>span:nth-child(2){transform: scale(0);}
+#site_map.active>a>span:nth-child(3){transform: rotate(-45deg); position: relative; top: -10px;  background: #efefef;}
 
 #main_visual{background: url(../img/main_bg.png)no-repeat center right;}
 #about{background: url(../img/about_bg.png)no-repeat center left;}

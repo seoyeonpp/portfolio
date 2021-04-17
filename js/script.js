@@ -1,3 +1,4 @@
+/* 풀페이지 */
 $(function () {
     $('#fullpage').fullpage({
         //options here
@@ -6,3 +7,9 @@ $(function () {
         navigationPosition: 'right',
     });
 });
+
+/* 햄버거메뉴 */
+function openMenu() {
+    document.getElementById('site_map').classList.toggle('active')
+    document.getElementById('nav').classList.toggle('open')
+};
