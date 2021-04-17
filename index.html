@@ -5,86 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박서연 포트폴리오</title>
-    <!-- 폰트 -->
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fullpage/jquery.fullpage.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="fullpage/jquery.fullpage.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <div id="wrap">
-        <header>
-            <div id="nav">
-                <div class="logo">
-                    <h1>박서연의 포트폴리오 입니다.</h1>
-                </div>
-                <ul class="navbar">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SKILLS</a></li>
-                    <li><a href="">PROJECT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                </ul>
-            </div><!-- //#nav -->
-            <div id="main_visual">
-                <h3><span>킹</span>콩도 탐내는 인재 봤서연?</h3>
-                <h3><span>안</span>녕하세요! 웹퍼블리셔 박서연입니다.</h3>
-                <img src="img/banner_img.png" alt="메인배너사진">
-                <img src="img/scroll.png" alt="메인배너사진">
-            </div><!-- //#main_visual -->
-        </header>
-        <section>
-            <div id="about_me">
-                <h4>about me</h4>
-                <div class="container">
-                    <div class="me_icon"><img src="img/about_me.png" alt="내소개"></div>
-                    <div class="text">
-                        <ul class="profile">
-                            <li class="tit">profile</li>
-                            <li>박서연_1997.05.30</li>
-                            <li>경기도 군포시 거주</li>
-                            <li>010-9445-5514</li>
-                            <li>seoyeonpub@gmail.com</li>
-                        </ul>
-                        <ul class="license">
-                            <li class="tit">license</li>
-                            <li>GTQ 포토샵 1급</li>
-                            <li>2종 운전면허</li>
-                            <li>무역영어 2급</li>
-                        </ul>
-                        <ul class="history">
-                            <li class="tit">history</li>
-                            <li>2018.08.01 ~ 2021.01.08 스타트업 서비스운영팀</li>
-                            <li>2021.05.31 UI/UX 반응형 웹디자인/웹퍼블리셔 훈련 수료</li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- //#about_me -->
-            <div id="skills">
-                <dl>
-                    <dt>HTML/CSS</dt>
-                    <dd>HTML5 의미를 고려한 마크업</dd>
-                    <dd>CSS3를 사용한 다양한 디자인 / 레이아웃 구현</dd>
-                    <dd>반응형 사이트 제작</dd>
-                </dl>
-                <dl>
-                    <dt>Javascript</dt>
-                    <dd>Javascript를 활용한 동적 페이지 제작</dd>
-                    <dd>이벤트 처리, 애니메이션 구현</dd>
-                </dl>
-                <dl>
-                    <dt>jQuery</dt>
-                    <dd>slide 구현</dd>
-                    <dd>플러그인 활용</dd>
-                </dl>
-                <dl>
-                    <dt>Etc.</dt>
-                    <dd>Photoshop - 포토샵가능</dd>
-                    <dd>Illustrator - 일러스트레이터가능</dd>
-                    <dd>Power Point - ppt가능</dd>
-                    <dd>Excel - 보고서 제작 및 데이터 활용가능</dd>
-                </dl>
-            </div><!-- //#skills -->
+    <header>
+        <div id="site_map">
+            <a href="#"><span></span><span></span><span></span></a>
+        </div>
+        <nav>
+            <ul>
+                <li data-menuanchor="section1"><a href="#section1">HOME</a></li>
+                <li data-menuanchor="section2"><a href="#section2">ABOUT ME</a></li>
+                <li data-menuanchor="section3"><a href="#section3">SKILLS</a></li>
+                <li data-menuanchor="section4"><a href="#section4">PROJECTS</a></li>
+                <li data-menuanchor="section5"><a href="#section5">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="fullpage">
+        <section id="main_visual" class="section">
+            <h2>HOME</h2>
+            <img src="img/banner_img.png" alt="메인비주얼" style="float: right;">
+            <h3><span>킹</span>콩도 탐내는 인재 봤서연?</h3>
+            <h3><span>안</span>녕하세요! 웹퍼블리셔 박서연입니다.</h3>
         </section>
-        <footer></footer>
+        <section id="about" class="section">
+            <h2>ABOUT ME</h2>
+            <img src="img/about_me.png" alt="about me" width="250">
+            <div class="text">
+                <ul class="profile">
+                    <li class="tit">profile</li>
+                    <li>박서연_1997.05.30</li>
+                    <li>경기도 군포시 거주</li>
+                    <li>010-9445-5514</li>
+                    <li>seoyeonpub@gmail.com</li>
+                </ul>
+                <ul class="license">
+                    <li class="tit">license</li>
+                    <li>GTQ 포토샵 1급</li>
+                    <li>2종 운전면허</li>
+                    <li>무역영어 2급</li>
+                </ul>
+                <ul class="history">
+                    <li class="tit">history</li>
+                    <li>2018.08.01 ~ 2021.01.08 스타트업 서비스운영팀</li>
+                    <li>2021.05.31 UI/UX 반응형 웹디자인/웹퍼블리셔 훈련 수료</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h2>SKILLS</h2>
+            <dl>
+                <dt>HTML/CSS</dt>
+                <dd>HTML5 의미를 고려한 마크업</dd>
+                <dd>CSS3를 사용한 다양한 디자인 / 레이아웃 구현</dd>
+                <dd>반응형 사이트 제작</dd>
+            </dl>
+            <dl>
+                <dt>Javascript</dt>
+                <dd>Javascript를 활용한 동적 페이지 제작</dd>
+                <dd>이벤트 처리, 애니메이션 구현</dd>
+            </dl>
+            <dl>
+                <dt>jQuery</dt>
+                <dd>slide 구현</dd>
+                <dd>플러그인 활용</dd>
+            </dl>
+            <dl>
+                <dt>Etc.</dt>
+                <dd>Photoshop - 포토샵가능</dd>
+                <dd>Illustrator - 일러스트레이터가능</dd>
+                <dd>Power Point - ppt가능</dd>
+                <dd>Excel - 보고서 제작 및 데이터 활용가능</dd>
+            </dl>
+        </section>
+        <section id="projects" class="section">
+            <h2>PROJECTS</h2>
+        </section>
+        <footer id="contact" class="section fp-auto-height">
+            <h2>CONTACT</h2>
+        </footer>
     </div>
 </body>
 </html>
