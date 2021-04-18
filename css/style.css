@@ -1,16 +1,27 @@
+*{margin: 0; padding: 0; border: 0;}
 body{color: #333333;font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';}
+.ir_so {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
 #fp-nav ul li a span{background: #6FA876;}
 cf:after{content: ''; display: block; clear:both;}
+.fl{float: left;}
+a{text-decoration: none;}
+h2{font-family: 'Open Sans', sans-serif; font-size: 40px; color: #555; display: inline-block; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);}
+h2:after{position:absolute; left: 50%; transform: translateX(-50%); content: ''; display: block; height: 3px; width: 100%;background: #d9ead2; animation-name: line; animation-duration: 3s; animation-iteration-count: infinite; animation-direction: alternate;}
+@keyframes line {
+    from{width: 0%;}
+    to{width: 100%;}
+}
 
 header #nav{background: #47754d; height: 100vh; width: 200px; position: fixed; top: 0; left: 0; z-index: 1; display: none;}
 header #nav.open{display: block;}
-header #nav ul{list-style: none; height: 100vh; display: flex; flex-direction: column; justify-content: space-evenly;}
-header #nav ul li{margin: 0 20px;}
-header #nav ul li a{text-decoration: none; color: #fff; font-size: 1.2em; font-family: 'Open Sans', sans-serif; display: block; width: 100%;}
-header #nav ul li a:hover{ color: #97cc9d}
-#site_map{z-index: 2; position: absolute; top: 20px; left: 20px;}
+header #nav ul{list-style: none; height: 100vh; display: flex; flex-direction: column; justify-content: space-evenly; padding-left: 0;}
+header #nav ul li{text-align: center; height: 50px; line-height: 50px;}
+header #nav ul li a{position: relative; font-weight: bold; background:transparent; text-decoration: none; color: #fff; font-size: 1.2em; font-family: 'Open Sans', sans-serif; display: block; width: 80%; margin: auto; transition: 0.5s;}
+header #nav ul li a:hover{color: #91cf98;}
+header #nav ul li a:hover:after{content: ''; display: block; width: 10px; height: 10px; border-radius: 50%; background: #91cf98; position: absolute; left: 50%; top: 0px; transform: translateX(-50%);}
+#site_map{z-index: 2; position: absolute; top: 30px; left: 30px;}
 #site_map>a{display: block; width: 100%;}
-#site_map>a>span{width: 35px; height: 4px; background: #333333; display: block; margin-bottom: 6px; }
+#site_map>a>span{width: 35px; height: 4px; background: #333333; display: block; margin-bottom: 6px; border-radius: 2px;}
 #site_map.active>a>span:nth-child(1){transform: rotate(45deg); position: relative; top: 10px; background: #efefef;}
 #site_map.active>a>span:nth-child(2){transform: scale(0);}
 #site_map.active>a>span:nth-child(3){transform: rotate(-45deg); position: relative; top: -10px;  background: #efefef;}
@@ -20,4 +31,35 @@ header #nav ul li a:hover{ color: #97cc9d}
 #skills{background: url(../img/skills_bg.png)no-repeat center left; background-size: contain;}
 #projects{background: url(../img/project_bg.png)no-repeat center right;}
 
-#about img{display: inline-block; margin-left: 350px;}
+#main_visual img[src="img/banner_img.png"]{animation-name: size; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+@keyframes size {
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
+}
+#main_visual h3.tit1{font-size: 45px; color: #444; position: absolute; top: 200px; left: 770px;}
+#main_visual h3.tit2{font-size: 30px; color: #444; position: absolute; top: 500px; left: 490px;}
+#main_visual h3.tit1>span{font-size: 65px; color: #8eb893;}
+#main_visual h3.tit2>span{font-size: 55px; color: #8eb893;}
+
+.typing-txt{display: none;}
+.typing-txt ul{list-style: none;}
+.typing{display: inline; animation-name: cursor; animation-duration: 0.3s; animation-iteration-count: infinite; font-size: 30px; line-height: 1;}
+@keyframes cursor {
+    0%{border-right: 1px solid #fff;}
+    50%{border-right: 1px solid #000;}
+    100%{border-right: 1px solid #fff;}
+}
+
+#main_visual img[src="img/scroll.png"]{position: absolute; left: 50%; bottom: 30px; transform: translateX(-50%); animation-name: scroll; animation-duration: 1s; animation-iteration-count: infinite; animation-direction: alternate;}
+@keyframes scroll {
+    from{bottom: 40px;}
+    to{bottom: 30px;}
+}
+
+#about img{position: absolute; top: 50%; left: 300px; transform: translateY(-50%);}
+#about .text{position: absolute; top: 50%; right: 500px; transform: translateY(-50%);}
+#about .tit{font-size: 20px; text-transform: uppercase; font-weight: bold; font-family: 'Open Sans', sans-serif; background: url(../img/about_tit.png) no-repeat center center; display: inline-block;height: 63px; line-height: 63px;}
+#about ul{list-style-image: url(../img/list_style.png);font-size: 16px; margin-bottom: 70px; margin-top: 70px;}
+#about ul.history{clear: left;}
+#about ul.profile{margin-right: 70px;}
+#about ul li{line-height: 2.5;}
