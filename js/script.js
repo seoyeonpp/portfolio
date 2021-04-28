@@ -1,12 +1,4 @@
 $(function () {
-    /* 풀페이지 */
-    $('#fullpage').fullpage({
-        //options here
-        anchors: ['section1', 'section2', 'section3', 'section4', 'section5'],
-        navigation: true,
-        navigationPosition: 'right',
-    });
-
     /* 타이핑효과 */
     var typingBool = false;
     var typingIdx = 0;
