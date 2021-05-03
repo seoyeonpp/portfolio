@@ -1,10 +1,9 @@
 /* reset */
 *{margin: 0; padding: 0; border: 0;}
-body{font-family: 'Noto Sans KR', sans-serif;}
+body{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
 a{text-decoration: none; outline: 0;}
 .cf:after{content: ''; display: block; clear: both;}
 .fl{float: left;}
-ol,ul{list-style: none;}
 @font-face {
     font-family: 'BMEULJIRO';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff');
@@ -13,14 +12,15 @@ ol,ul{list-style: none;}
 }
 
 /* header */
-#wrap{width: 100%; height: 100%; background: url(../img/bg_img.png) repeat-y; background-size: cover;}
+#wrap{width: 100%; height: 100%; background: url(../img/bg_img.png) repeat-y; background-size: cover; z-index: -1;}
 header{position: fixed; top: 0; left: 0; right: 0; display: flex; height: 100px; z-index: 100; justify-content: space-between;}
 header h1{margin: 20px;}
 nav{line-height: 100px; margin-right: 20px;}
-nav #menu{display: flex; width: 100%; font-weight: bold;}
+nav #menu{display: flex; width: 100%; font-weight: bold; list-style: none;}
 nav #menu li:not(:last-child){margin-right: 20px;}
 nav #menu a{color: #444444; font-size: 1.5rem;}
-section h2{text-transform:uppercase;}
+section h2{text-transform:uppercase; margin: auto; width: 10%; text-align: center; font-size: 2rem;}
+
 /* main_visual */
 #main_visual{width: 100%; height: 120vh; background: url(../img/main.png) repeat-x; background-size: contain; position: relative;}
 #main_visual .title{font-family: 'BMEULJIRO'; position: absolute; top: 30%; left: 50%; transform: translate(-50%,-30%); color: #333333; font-size: 3rem;}
@@ -36,10 +36,19 @@ section h2{text-transform:uppercase;}
     100%{border-right: 1px solid #fff;}
 }
 
+/* about me */
+#about{width: 100%; height: 100vh;}
+#about .text{display: flex; justify-content: space-evenly;}
+#about .text .box{width: 20%; background: #f8f8f8; height: 400px; border-radius: 30px; padding: 20px;}
+#about .box li{list-style-image: url(../img/list_style.png);}
+#about .text .box .tit{color: #ffac91; text-shadow: -7px 5px 1px #eeeeee; font-size: 1.5rem; text-transform: uppercase; text-align: left; list-style: none; margin-bottom: 50px;}
+
 /* skills */
-#skills .chart_wrap{width: 80%; margin: auto; display: flex; justify-content: center; }
+#skills{width: 100%; height: 100vh;}
+#skills .chart_bg{background: rgba(255, 232, 199,.3); width: 80%; height: 50%; margin: 0 auto; border-radius: 50px;}
+#skills .chart_wrap{width: 80%; margin: auto; display: flex; justify-content: center;}
 #skills .chart_wrap .chart{margin: 0 10px; position: relative;}
-#skills .chart_wrap .chart h3{font-size: 1.2rem; text-align: center; color: #444444;}
+#skills .chart_wrap .chart h3{font-size: 1.2rem; text-align: center; color: #555555;}
 #skills .chart_wrap .chart h4{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 1.1rem; padding-left: 24px; color: #878787;}
 #skills .chart_wrap .chart svg{width: 200px; height: 200px;}
 #skills .chart_wrap .chart circle{fill: #ffe8c7; stroke-width: 20; stroke-dasharray: 565; transform: rotate(-90deg); transform-origin: 50% 50%; stroke-dashoffset: 565; stroke-linecap: round;}
