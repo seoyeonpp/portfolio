@@ -4,58 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박서연 포트폴리오</title>
+    <title>박서연 포트폴리오입니다.</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="js/script.js"></script>
 </head>
 <body>
-    <header class="cf">
-        <div id="site_map" onclick="openMenu()">
-            <button href="#"><span></span><span></span><span></span></button>
-        </div>
-        <nav id="nav">
-            <ul>
-                <li data-menuanchor="section1"><a href="#main_visual">HOME</a></li>
-                <li data-menuanchor="section2"><a href="#about">ABOUT ME</a></li>
-                <li data-menuanchor="section3"><a href="#skills">SKILLS</a></li>
-                <li data-menuanchor="section4"><a href="#projects">PROJECTS</a></li>
-                <li data-menuanchor="section5"><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-        <h1 class="ir_so">박서연의 포트폴리오 입니다.</h1>
-    </header>
-    <section>
-        <div id="main_visual" class="section">
-            <div class="visual_wrap">
-                <h2 class="ir_so">HOME</h2>
-                <h3 class="tit1">킹콩도 탐내는 인재 <span>봤서연?</span></h3>
-                <div class="typing-txt">
-                    <ul>
-                        <li>웹디자이너</li>
-                        <li>웹퍼블리셔</li>
-                        <li>프론트앤드 개발자를 꿈꾸는</li>
-                    </ul>
+    <div id="wrap">
+        <header>
+            <h1><a href="#"><img src="img/logo.png" alt="logo" width="250"></a></h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#main_visual">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div id="main_visual">
+                <div class="title">
+                    <div class="typing-txt">
+                        <ul>
+                            <li>웹 - 디자이너</li>
+                            <li>웹 - 퍼블리셔</li>
+                        </ul>
+                    </div>
+                    <h3><br><p class="typing"></p> <br>박서연의 포트폴리오 <br><span>커밍 - 쑨</span></h3>
                 </div>
-                <h3 class="tit2">안녕하세요! <br> <p class="typing"></p> <br> <span>박서연</span> 입니다.</h3>
-                <img src="img/banner_img.png" alt="메인비주얼">
-                <img src="img/main_bg.png" alt="메인비주얼">
-                <figure class="video_fixed">
-                    <video width="100%" autoplay loop muted>
-                        <source  src="img/bg_video.mp4" type="video/mp4"/>
-                    </video>
-                </figure>
-            </div>
-        </div>
-        <div id="about" class="section">
-            <div class="about_wrap">
+            </div><!-- //#main_visual -->
+            <div id="about">
                 <h2>ABOUT ME</h2>
-                <img src="img/about_bg.png" alt="about me">
-                <img src="img/about_me.png" alt="about me" width="250">
                 <div class="text cf">
                     <ul class="profile fl">
                         <li class="tit">profile</li>
@@ -77,46 +59,11 @@
                         <li>2021.05.31 UI/UX 반응형 웹디자인/웹퍼블리셔 훈련 수료</li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <div id="skills" class="section">
-            <h2>SKILLS</h2>
-            <dl>
-                <dt>HTML/CSS</dt>
-                <dd>HTML5 의미를 고려한 마크업</dd>
-                <dd>CSS3를 사용한 다양한 디자인 / 레이아웃 구현</dd>
-                <dd>반응형 사이트 제작</dd>
-            </dl>
-            <dl>
-                <dt>Javascript</dt>
-                <dd>Javascript를 활용한 동적 페이지 제작</dd>
-                <dd>이벤트 처리, 애니메이션 구현</dd>
-            </dl>
-            <dl>
-                <dt>jQuery</dt>
-                <dd>slide 구현</dd>
-                <dd>플러그인 활용</dd>
-            </dl>
-            <dl>
-                <dt>Etc.</dt>
-                <dd>Photoshop - 포토샵가능</dd>
-                <dd>Illustrator - 일러스트레이터가능</dd>
-                <dd>Power Point - ppt가능</dd>
-                <dd>Excel - 보고서 제작 및 데이터 활용가능</dd>
-            </dl>
-        </div>
-        <div id="projects" class="section">
-            <h2>PROJECTS</h2>
-        </div>
-    </section>
-    <footer id="contact" class="section">
-        <div class="contact_wrap">
-            <img src="img/contact_bg.png" alt="contact">
-            <h2>CONTACT</h2>
-            <p>이메일 어쩌구</p>
-            <p>전화번호 어쩌구</p>
-            <p>어쩌구 어쩌구</p>
-        </div>
-    </footer>
+            </div><!-- //#about -->
+            <div id="skills"></div>
+            <div id="projects"></div>
+            <div id="contact"></div>
+        </section>
+    </div>
 </body>
 </html>

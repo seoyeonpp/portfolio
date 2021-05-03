@@ -45,9 +45,3 @@ $(function () {
         };
     };
 });
-
-/* 햄버거메뉴 */
-function openMenu() {
-    document.getElementById('site_map').classList.toggle('active')
-    document.getElementById('nav').classList.toggle('open')
-};
