@@ -44,4 +44,39 @@ $(function () {
             };
         };
     };
+
+    /* 그래프효과 */
+    var chartWrap = $('.chart_wrap');
+    var chart = $('.chart');
+    var chartosT = chart.offset().top - 700;
+
+    $(window).scroll(function () {
+        var sct = $(this).scrollTop();
+        if (sct >= chartosT) {
+            if (!chartWrap.hasClass('active')) {
+                activeChart();
+                chartWrap.addClass('active')
+            }
+        }
+    })
+
+    function activeChart() {
+        chart.each(function () {
+            var item = $(this);
+            var title = item.find('h4');
+            var targetNum = title.attr('data-num');
+            var circle = item.find('circle');
+            $({ rate: 0 }).animate({ rate: targetNum }, {
+                duration: 1500,
+                progress: function () {
+                    var now = this.rate;
+                    var amount = 565 - (565 * now / 100);
+                    title.text(Math.floor(now) + '%');
+                    circle.css({ strokeDashoffset: amount });
+                }
+            })
+        })
+    }
+
+
 });

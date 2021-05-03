@@ -20,8 +20,7 @@ nav{line-height: 100px; margin-right: 20px;}
 nav #menu{display: flex; width: 100%; font-weight: bold;}
 nav #menu li:not(:last-child){margin-right: 20px;}
 nav #menu a{color: #444444; font-size: 1.5rem;}
-
-
+section h2{text-transform:uppercase;}
 /* main_visual */
 #main_visual{width: 100%; height: 120vh; background: url(../img/main.png) repeat-x; background-size: contain; position: relative;}
 #main_visual .title{font-family: 'BMEULJIRO'; position: absolute; top: 30%; left: 50%; transform: translate(-50%,-30%); color: #333333; font-size: 3rem;}
@@ -36,3 +35,15 @@ nav #menu a{color: #444444; font-size: 1.5rem;}
     50%{border-right: 1px solid #000;}
     100%{border-right: 1px solid #fff;}
 }
+
+/* skills */
+#skills .chart_wrap{width: 80%; margin: auto; display: flex; justify-content: center; }
+#skills .chart_wrap .chart{margin: 0 10px; position: relative;}
+#skills .chart_wrap .chart h3{font-size: 1.2rem; text-align: center; color: #444444;}
+#skills .chart_wrap .chart h4{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 1.1rem; padding-left: 24px; color: #878787;}
+#skills .chart_wrap .chart svg{width: 200px; height: 200px;}
+#skills .chart_wrap .chart circle{fill: #ffe8c7; stroke-width: 20; stroke-dasharray: 565; transform: rotate(-90deg); transform-origin: 50% 50%; stroke-dashoffset: 565; stroke-linecap: round;}
+.chart:nth-child(1) circle{stroke: #ff926c;}
+.chart:nth-child(2) circle{stroke: #ffac91;}
+.chart:nth-child(3) circle{stroke: #ffc978;}
+.chart:nth-child(4) circle{stroke: #ffae68;}
