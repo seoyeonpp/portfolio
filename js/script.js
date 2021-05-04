@@ -85,5 +85,19 @@ $(function () {
         var rYP = (e.pageY - this.offsetTop - $(this).height() / 2);
         hover.css('text-shadow', +rYP / 10 + 'px ' + rXP / 80 + 'px rgba(213, 82, 57,0.8), ' + rYP / 8 + 'px ' + rXP / 60 + 'px rgba(228,186,125,1), ' + rXP / 70 + 'px ' + rYP / 12 + 'px rgba(146,171,163,.7)');
     });
+});
 
+// 탑버튼
+let Top = document.querySelector('#top_btn');
+
+window.addEventListener('scroll', function () {
+    if (this.scrollY > 700) {
+        Top.classList.add('on');
+    } else {
+        Top.classList.remove('on');
+    }
+});
+Top.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
