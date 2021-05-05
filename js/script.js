@@ -44,6 +44,17 @@ $(function () {
             };
         };
     };
+    /* nav menu 효과 */
+    var menu = $('nav #menu li');
+    var contents = $('#wrap section');
+    menu.click(function (e) {
+        var tg = $(this);
+        var i = tg.index();
+        var section = contents.eq(i);
+        var st = section.offset().top;
+        menu.removeClass('on').eq(i).addClass('on');
+        $('html,body').stop().animate({ scrollTop: st }, 1000, 'easeInCubic');
+    })
 
     /* 그래프효과 */
     var chartWrap = $('.chart_wrap');
@@ -77,9 +88,47 @@ $(function () {
             })
         })
     }
+
+    /* projects hover효과 */
+    $('.hidden').hover(function () {
+        var ah = $(this).innerHeight();
+        var img = $(this).find('img');
+        var imgh = img.innerHeight();
+        img.stop().animate({ top: ah - imgh }, 3000);
+    }, function () {
+        var img = $(this).find('img');
+        img.stop().animate({ top: 0 }, 3000);
+    })
+    /* project1 스크롤효과 */
+    $(window).scroll(function () {
+        var sct = $(window).scrollTop();
+        var csst = $('#project1').offset().top;
+        if (sct > csst - 800) {
+            $('.project1_left').stop().animate({ left: '5px' }, 1000);
+            $('.project1_right').stop().animate({ right: '10px' }, 1000);
+        } else {
+            $('.project1_left').stop().animate({ left: '-600px' }, 1000);
+            $('.project1_right').stop().animate({ right: '-600px' }, 1000);
+        }
+    });
+    /* project2 스크롤효과 */
+    $(window).scroll(function () {
+        var sct = $(window).scrollTop();
+        var csst = $('#project2').offset().top;
+        if (sct > csst - 800) {
+            $('.project2_left').stop().animate({ left: '5px' }, 1000);
+            $('.project2_right').stop().animate({ right: '10px' }, 1000);
+        } else {
+            $('.project2_left').stop().animate({ left: '-600px' }, 1000);
+            $('.project2_right').stop().animate({ right: '-600px' }, 1000);
+        }
+    });
+
+
+
 });
 
-// 탑버튼
+/* 탑버튼 */
 let Top = document.querySelector('#top_btn');
 
 window.addEventListener('scroll', function () {

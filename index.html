@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Modak&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
             <h1><a href="#"><img src="img/logo.png" alt="logo" width="250"></a></h1>
             <nav>
                 <ul id="menu">
-                    <li><a href="#main_visual">HOME</a></li>
+                    <li class="on"><a href="#main_visual">HOME</a></li>
                     <li><a href="#about">ABOUT ME</a></li>
                     <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
@@ -38,6 +38,8 @@
                     <h3><br><p class="typing"></p> <br>박서연의 포트폴리오 <br><span>커밍 - 쑨</span></h3>
                 </div>
             </div><!-- //#main_visual -->
+        </section>
+        <section>
             <div id="about">
                 <h2>about me</h2>
                 <div class="text">
@@ -52,6 +54,8 @@
                     <ul class="box license">
                         <li class="tit">license</li>
                         <li><i class="fas fa-address-card"></i>GTQ 포토샵 1급</li>
+                        <li><i class="fas fa-address-card"></i>웹디자인기능사 필기 합격 (실기 접수예정)</li>
+                        <li><i class="fas fa-address-card"></i>컴퓨터그래픽스운용기능사 필기 합격</li>
                         <li><i class="fas fa-address-card"></i>2종 운전면허</li>
                         <li><i class="fas fa-address-card"></i>무역영어 2급</li>
                     </ul>
@@ -62,6 +66,8 @@
                     </ul>
                 </div>
             </div><!-- //#about -->
+        </section>
+        <section>
             <div id="skills">
                 <h2>skills</h2>
                 <div class="chart_bg">
@@ -96,17 +102,59 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!-- //#skills -->
+        </section>
+        <section>
             <div id="projects">
                 <h2>projects</h2>
-                <h4><a href="http://syportfolio97.dothome.co.kr/project1/index.html" target="_blank">Project1</a></h4>
+                <!-- <h4><a href="http://syportfolio97.dothome.co.kr/project1/index.html" target="_blank">Project1</a></h4>
                 <h4><a href="http://syportfolio97.dothome.co.kr/project1/board.html" target="_blank">Project1 게시판</a></h4>
                 <h4><a href="http://syportfolio97.dothome.co.kr/project2/index.html" target="_blank">Project2</a></h4>
-                <h4><a href="http://syportfolio97.dothome.co.kr/project3/index.html" target="_blank">Project3</a></h4>
-            </div>
+                <h4><a href="http://syportfolio97.dothome.co.kr/project3/index.html" target="_blank">Project3</a></h4> -->
+                <div id="project1">
+                    <div id="project1_wrap">
+                        <h4>웹사이트 리뉴얼</h4>
+                        <div class="project1_left">
+                            <p><a href="#"><img src="img/imac.png" alt="모니터" width="550"></a></p>
+                            <div class="main_inner"><a href="http://syportfolio97.dothome.co.kr/project1/index.html" class="hidden" target="_blank"><img src="img/project1_img.jpg" alt="project1" width="500"></a></div>
+                        </div>
+                        <div class="project1_right">
+                            <ul>
+                                <li class="title_bold">한국해양과학기술원 리뉴얼</li>
+                                <li class="cont_small">한국해양과학기술원 홈페이지를 리뉴얼했습니다. flexbox를 사용하여 디자인 했고 어쩌구</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- //#project1 -->
+                <div id="project2">
+                    <div id="project2_wrap">
+                        <h4>웹사이트 리뉴얼</h4>
+                        <div class="project2_left">
+                            <ul>
+                                <li class="title_bold">서울상상나라 리뉴얼</li>
+                                <li class="cont_small">서울상상나라 홈페이지를 리뉴얼했습니다. flexbox를 사용하여 디자인 했고 어쩌구</li>
+                            </ul>
+                        </div>
+                        <div class="project2_right">
+                            <p><a href="#"><img src="img/macbook.png" alt="모니터" width="550"></a></p>
+                            <div class="main_inner"><a href="http://syportfolio97.dothome.co.kr/project2/index.html" class="hidden" target="_blank"><img src="img/project2_img.jpg" alt="project2" width="500"></a></div>
+                        </div>
+                    </div>
+                </div><!-- //#project2 -->
+            </div><!-- //#projects -->
+        </section>
+        <section>
             <div id="contact">
                 <h2>contact</h2>
-            </div>
+                <img src="img/contact_profile.png" alt="contact" width="800">
+                <div class="direct">
+                    <ul>
+                        <li><i class="fas fa-mobile"></i><a href="tel:010-9445-5514">010-9445-5514</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:seoyeonpub@gmail.com">seoyeonpub@gmail.com</a></li>
+                        <li><i class="fab fa-github"></i><a href="https://github.com/seoyeonpp" target="_blank">https://github.com/seoyeonpp</a></li>
+                    </ul>
+                </div>
+            </div><!-- //#contact -->
         </section>
     </div>
     <div id="top_btn">

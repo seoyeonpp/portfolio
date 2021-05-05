@@ -1,7 +1,7 @@
 /* reset */
 *{margin: 0; padding: 0; border: 0;}
 body{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
-a{text-decoration: none; outline: 0; color: #333;}
+a{text-decoration: none; outline: 0; color: #333; transition: color 0.5s;}
 a:hover{color: #ffae68;}
 .cf:after{content: ''; display: block; clear: both;}
 .fl{float: left;}
@@ -20,12 +20,14 @@ header h1{margin: 20px;}
 nav{line-height: 100px; margin-right: 20px;}
 nav #menu{display: flex; width: 100%; font-weight: bold;}
 nav #menu li:not(:last-child){margin-right: 20px;}
-nav #menu a{color: #444444; font-size: 1.5rem;}
-section h2{text-transform:uppercase; margin: auto; width: 15%; text-align: center; font-size: 2rem; color: #e4ba7d; text-shadow: 4px 4px 0px #ffeded;}
+nav #menu a{color: #444444; font-size: 1.5rem; position: relative;}
+nav #menu li.on a{color: #ffd28e;}
+nav #menu li.on a:after{content: ''; width: 10px; height: 10px; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #ffd28e; border-radius: 50%;}
+section h2{text-transform:uppercase; margin: 100px auto; width: 15%; text-align: center; font-size: 2rem; color: #e4ba7d; position: relative; }
 section h2::first-letter{font-size: 4rem; color: #ff926c;}
 
 /* main_visual */
-#main_visual{width: 100%; height: 120vh; background: url(../img/main.png) repeat-x; background-size: contain; position: relative;}
+#main_visual{width: 100%; height: 100vh; background: url(../img/main.png) repeat-x; background-size: cover; position: relative;}
 #main_visual .title{font-family: 'BMEULJIRO'; position: absolute; top: 30%; left: 50%; transform: translate(-50%,-30%); color: #333333; font-size: 3rem;}
 #main_visual .title h3{text-align: center;}
 #main_visual .title h3 span{color: #ffffff; text-shadow: 2px 2px 2px #ff926c; font-size: 5rem;}
@@ -63,11 +65,30 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 .chart:nth-child(4) circle{stroke: #ffae68;}
 
 /* projects */
-#projects{width: 100%; height: 100vh;}
-#projects h4{font-size: 40px; color: #333; text-align: center;}
+#projects{width: 100%;}
+#projects h4{font-size: 1.5rem; color: #333333; background: rgba(255, 207, 139, 0.3); border-radius: 50px; text-align: center; display: inline-block; width: 20%; padding: 10px 0;}
+#projects ul{background: rgba(206, 206, 206, 0.5); border-radius: 30px; height: 300px; display: block; padding: 30px;}
+#project1{width: 100%; height: 100vh;}
+#project2{width: 100%; height: 100vh;}
+#project1_wrap{width: 1400px; height: 700px; overflow: hidden; position: relative; margin: auto;}
+#project2_wrap{width: 1400px; height: 700px; overflow: hidden; position: relative; margin: auto;}
+.project1_left{width: 550px; position: absolute; left: -600px; top: 120px;}
+.project1_left>p{position: relative; height: 450px; position: relative; top: 30px;}
+.project1_right{width: 600px; position: absolute; right: -600px; top: 210px;}
+#projects .title_bold{font-size: 1.5rem; color: #333; font-weight: bold;}
+#projects .cont_small{font-size: 1rem; color: #444;}
+.project2_left{width: 550px; position: absolute; left: -600px; top: 210px;}
+.project2_right{width: 600px; position: absolute; right: -600px; top: 120px;}
+
+.hidden{display: block; width: 496px; height: 280px; position: relative; top: -392px; left: 27px; overflow: hidden;}
+.hidden>img{display: block; position: absolute; top: 0; left: 0;}
+#project2 .hidden{width: 459px; height: 287px; top: -336px; left: 45px;}
+
 
 /* contact */
-#contact{width: 100%; height: 100vh;}
+#contact{width: 100%; height: 100vh; position: relative;}
+#contact img{position: absolute; left: 850px; top: 100px;}
+.direct{background: url(../img/bubble.png) no-repeat; display: block; width: 800px; height: 700px; background-size: contain; position: absolute; top: 200px; left: 350px;}
 
 /* top_btn */
 #top_btn{position: fixed; right: 50px; bottom: 50px; opacity: 0; transition: opacity 0.5s;}
