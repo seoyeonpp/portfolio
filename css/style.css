@@ -33,6 +33,24 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 #main_visual .title{font-family: 'BMEULJIRO'; position: absolute; top: 30%; left: 50%; transform: translate(-50%,-30%); color: #333333; font-size: 3rem;}
 #main_visual .title h3{text-align: center;}
 #main_visual .title h3 span{color: #ffffff; text-shadow: 2px 2px 2px #ff926c; font-size: 5rem;}
+.resume{display: flex;flex-direction: row; justify-content: center; position: absolute; top: 586px; left: 590px; }
+.resume span{position: relative; animation: bounce 1s ease infinite alternate; color: #ffddd2; font-size: 1.1rem; font-weight: bold;}
+.resume span:nth-child(2) { animation-delay: .1s; }
+.resume span:nth-child(3) { animation-delay: .2s; }
+.resume span:nth-child(4) { animation-delay: .3s; }
+.resume span:nth-child(5) { animation-delay: .4s; }
+.resume span:nth-child(6) { animation-delay: .5s; }
+.resume span:nth-child(7) { animation-delay: .6s; }
+.resume span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+    0%{top: 15px;}
+    100% {top: -15px;}
+}
+
+
+
+
 
 /* typing */
 .typing-txt{display: none;}
@@ -57,7 +75,7 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 #skills .chart_bg{background: rgba(255, 232, 199,.3); width: 80%; height: 50%; margin: 0 auto; border-radius: 50px;}
 #skills .chart_wrap{width: 80%; margin: auto; display: flex; justify-content: space-between;  align-items: center; align-content: center; height: 100%;}
 #skills .chart_wrap .chart{margin: 0 10px; position: relative;}
-#skills .chart_wrap .chart h3{font-size: 1.2rem; text-align: center; color: #555555;}
+#skills .chart_wrap .chart h3{font-size: 1.2rem; text-align: center; color: #555555; margin-bottom: 10px;}
 #skills .chart_wrap .chart h4{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 1.1rem; padding-left: 24px; color: #878787;}
 #skills .chart_wrap .chart svg{width: 200px; height: 200px;}
 #skills .chart_wrap .chart circle{fill: #ffe8c7; stroke-width: 20; stroke-dasharray: 515; transform: rotate(-90deg); transform-origin: 50% 50%; stroke-dashoffset: 515; stroke-linecap: round;}
@@ -65,32 +83,49 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 .chart:nth-child(2) circle{stroke: #ffac91;}
 .chart:nth-child(3) circle{stroke: #ffc978;}
 .chart:nth-child(4) circle{stroke: #ffae68;}
+.chart:nth-child(5) circle{stroke: #ffe078;}
 
 /* projects */
 #projects{width: 100%;}
 #projects h4{font-size: 1.5rem; color: #333333; background: rgba(255, 207, 139, 0.3); border-radius: 50px; text-align: center; display: inline-block; width: 20%; padding: 10px 0;}
-#projects ul{background: rgba(206, 206, 206, 0.5); border-radius: 30px; height: 300px; display: block; padding: 30px;}
+#projects ul{background: rgba(245,245,245,.5); border-radius: 30px; height: 300px; display: block; padding: 30px;}
 #project1{width: 100%; height: 100vh;}
 #project2{width: 100%; height: 100vh;}
+#project3{width: 100%; height: 100vh;}
+#project4{width: 100%; height: 100vh;}
+#app_design{width: 100%; height: 100vh;}
 #project1_wrap{width: 1400px; height: 700px; overflow: hidden; position: relative; margin: auto;}
 #project2_wrap{width: 1400px; height: 700px; overflow: hidden; position: relative; margin: auto;}
+#project3_wrap{width: 1400px; height: 700px; overflow: hidden; position: relative; margin: auto;}
+#project4_wrap{width: 1400px; height: 700px; overflow: hidden; position: relative; margin: auto;}
+#app_wrap{width: 1400px; height: 700px; overflow: hidden; position: relative; margin: auto;}
 .project1_left{width: 550px; position: absolute; left: -600px; top: 120px;}
 .project1_left>p{position: relative; height: 450px; position: relative; top: 30px;}
 .project1_right{width: 600px; position: absolute; right: -600px; top: 210px;}
 #projects .title_bold{font-size: 1.5rem; color: #333; font-weight: bold;}
 #projects .cont_small{font-size: 1rem; color: #444;}
-.project2_left{width: 550px; position: absolute; left: -600px; top: 210px;}
-.project2_right{width: 600px; position: absolute; right: -600px; top: 120px;}
+.project2_left{width: 550px; position: absolute; left: -600px; top: 200px;}
+.project2_right{width: 600px; position: absolute; right: -600px; top: 200px;}
+.project3_left{width: 550px; position: absolute; left: -600px; top: 200px;}
+.project3_right{width: 600px; position: absolute; right: -600px; top: 200px;}
+.project4_left{width: 550px; position: absolute; left: -600px; top: 200px;}
+.project4_right{width: 600px; position: absolute; right: -600px; top: 200px;}
+.app_left{width: 550px; position: absolute; left: -600px; top: 200px;}
+.app_right{width: 600px; position: absolute; right: -600px; top: 160px;}
+.app_right>img{margin-right: 20px;}
 
 .hidden{display: block; width: 496px; height: 280px; position: relative; top: -392px; left: 27px; overflow: hidden;}
 .hidden>img{display: block; position: absolute; top: 0; left: 0;}
 #project2 .hidden{width: 459px; height: 287px; top: -336px; left: 45px;}
-
+#app_design .hidden{left: 215px; top: -490px; height: 459px; border-radius: 20px;}
+#app_design .hidden>img{border-radius: 20px;}
 
 /* contact */
 #contact{width: 100%; height: 100vh; position: relative;}
 #contact img{position: absolute; left: 850px; top: 100px;}
-.direct{background: url(../img/bubble.png) no-repeat; display: block; width: 800px; height: 700px; background-size: contain; position: absolute; top: 200px; left: 350px;}
+.bubble{background: url(../img/bubble.png) no-repeat; display: block; width: 800px; height: 340px; background-size: contain; position: absolute; top: 30%; left: 50%; transform: translateX(-50%); z-index: 1;}
+.direct{padding: 10px; width: 500px; height: 300px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 2;}
+.direct p{color: #fff; font-size: 1.5rem; font-weight: bold;}
 
 /* top_btn */
 #top_btn{position: fixed; right: 50px; bottom: 50px; opacity: 0; transition: opacity 0.5s;}

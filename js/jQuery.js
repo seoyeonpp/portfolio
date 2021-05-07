@@ -124,6 +124,42 @@ $(function () {
             $('.project2_right').stop().animate({ right: '-600px' }, 1000);
         }
     });
+    /* project3 스크롤효과 */
+    $(window).scroll(function () {
+        var sct = $(window).scrollTop();
+        var csst = $('#project3').offset().top;
+        if (sct > csst - 800) {
+            $('.project3_left').stop().animate({ left: '5px' }, 1000);
+            $('.project3_right').stop().animate({ right: '10px' }, 1000);
+        } else {
+            $('.project3_left').stop().animate({ left: '-600px' }, 1000);
+            $('.project3_right').stop().animate({ right: '-600px' }, 1000);
+        }
+    });
+    /* project4 스크롤효과 */
+    $(window).scroll(function () {
+        var sct = $(window).scrollTop();
+        var csst = $('#project4').offset().top;
+        if (sct > csst - 800) {
+            $('.project4_left').stop().animate({ left: '5px' }, 1000);
+            $('.project4_right').stop().animate({ right: '10px' }, 1000);
+        } else {
+            $('.project4_left').stop().animate({ left: '-600px' }, 1000);
+            $('.project4_right').stop().animate({ right: '-600px' }, 1000);
+        }
+    });
+    /* app_design 스크롤효과 */
+    $(window).scroll(function () {
+        var sct = $(window).scrollTop();
+        var csst = $('#app_design').offset().top;
+        if (sct > csst - 800) {
+            $('.app_left').stop().animate({ left: '5px' }, 1000);
+            $('.app_right').stop().animate({ right: '10px' }, 1000);
+        } else {
+            $('.app_left').stop().animate({ left: '-600px' }, 1000);
+            $('.app_right').stop().animate({ right: '-600px' }, 1000);
+        }
+    });
 
 
 
