@@ -105,7 +105,7 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 .project3_left{width: 550px; position: absolute; left: -600px; top: 200px;}
 .project3_right{width: 600px; position: absolute; right: -600px; top: 200px;}
 .project4_left{width: 550px; position: absolute; left: -600px; top: 200px;}
-.project4_left>p:nth-child(2){position: absolute; top: 60px; left: 480px;}
+.project4_left>p.inner2{position: absolute; top: 60px; left: 480px;}
 .project4_right{width: 600px; position: absolute; right: -600px; top: 200px;}
 .app_left{width: 550px; position: absolute; left: -600px; top: 200px;}
 .app_right{width: 600px; position: absolute; right: -600px; top: 160px;}
