@@ -160,6 +160,16 @@ $(function () {
             $('.app_right').stop().animate({ right: '-600px' }, 1000);
         }
     });
+    /* aboutme 스크롤효과 */
+    $(window).scroll(function () {
+        var sct = $(window).scrollTop();
+        var csst = $('#about').offset().top;
+        if (sct > csst - 800) {
+            $('.box').stop().animate({ opacity: 1 }, 1000);
+        } else {
+            $('.box').stop().animate({ opacity: 0 }, 1000);
+        }
+    });
 
 
 
