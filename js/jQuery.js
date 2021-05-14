@@ -61,6 +61,7 @@ $(function () {
     var chartWrap = $('.chart_wrap');
     var chart = $('.chart');
     var chartosT = chart.offset().top - 700;
+    var droplist = $('.tool_skills')
 
     $(window).scroll(function () {
         var sct = $(this).scrollTop();
@@ -68,6 +69,9 @@ $(function () {
             if (!chartWrap.hasClass('active')) {
                 activeChart();
                 chartWrap.addClass('active')
+            }
+            if (!droplist.hasClass('on')) {
+                droplist.addClass('on')
             }
         }
     })
@@ -82,7 +86,7 @@ $(function () {
                 duration: 1500,
                 progress: function () {
                     var now = this.rate;
-                    var amount = 515 - (515 * now / 100);
+                    var amount = 390 - (390 * now / 100);
                     title.text(Math.floor(now) + '%');
                     circle.css({ strokeDashoffset: amount });
                 }
