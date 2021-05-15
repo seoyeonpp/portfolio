@@ -2,7 +2,7 @@
 
 /* reset */
 *{margin: 0; padding: 0; border: 0;}
-html{font-size: 16px;}
+html{font-size: 16px; overflow-x: hidden;}
 body{font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box;}
 a{text-decoration: none; outline: 0; color: #333; transition: color 0.5s;}
 a:hover{color: #ffae68;}
@@ -110,7 +110,7 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 
 
 
-#skills .chart_wrap{margin: auto; display: flex; justify-content: flex-end;  align-items: center; align-content: center; height: 100%;}
+#skills .chart_wrap{width: 75%; margin: auto; display: flex; justify-content: flex-end;  align-items: center; align-content: center; height: 100%;}
 #skills .chart_wrap .chart{margin: 0 10px; position: relative;}
 #skills .chart_wrap .chart h3{font-size: 1.1rem; text-align: center; color: #666; margin-bottom: 10px;}
 #skills .chart_wrap .chart h4{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); font-size: 1.1rem; padding-left: 24px; color: #878787;}
@@ -132,14 +132,19 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 #project4{width: 100%; height: 100vh;}
 #app_design{width: 100%; height: 100vh;}
 #project_wrap{width: 1400px; height: 700px; overflow: hidden; position: relative; margin: auto;}
-#projects .title_bold{font-size: 1.5rem; color: #333; font-weight: bold;}
-#projects .cont_small{font-size: 1rem; color: #444;}
+#projects .title_bold{font-size: 1.5rem; color: #444; font-weight: bold;}
+#projects .title_bold>span{color: #dddddd; font-size: 3rem; }
+#projects .cont_small{font-size: 0.98rem; color: #555; text-align: justify;}
+#projects .duration_time{margin-top: 20px; color: #555; font-size: 0.9rem; text-align: justify;}
+#projects .duration_time span{display: block; color: #666; font-size: 0.8rem;}
+#projects .participation{margin-top: 20px; color: #555; font-size: 0.9rem;}
+
 
 .project1_left{width: 550px; position: absolute; left: -600px; top: 120px;}
 .project1_left>p{position: relative; height: 450px; position: relative; top: 30px;}
-.project1_right{width: 600px; position: absolute; right: -600px; top: 210px;}
+.project1_right{width: 600px; position: absolute; right: -600px; top: 120px;}
 
-.project2_left{width: 550px; position: absolute; left: -600px; top: 200px;}
+.project2_left{width: 550px; position: absolute; left: -600px; top: 170px;}
 .project2_right{width: 600px; position: absolute; right: -600px; top: 200px;}
 
 .project3_left{width: 550px; position: absolute; left: -600px; top: 200px;}
@@ -181,8 +186,7 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 .show_project {
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    margin-left: -25px;
+    left: 70%;
     display: block;
     width: 50px;
     height: 50px;
@@ -197,6 +201,20 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(255, 219, 100, 0.5);
     animation: pulse 1.5s infinite;
+}
+.show_project.sub{
+    position: absolute;
+    bottom: 20px;
+    left: 82%;
+    background: #ffae68;
+    box-shadow: 0 0 0 0 rgba(255, 174, 104, 0.5);
+}
+.show_project.planning{
+    position: absolute;
+    bottom: 20px;
+    left: 58%;
+    background: #ff936b;
+    box-shadow: 0 0 0 0 rgba(255, 147, 107, 0.5);
 }
 
 .show_project:hover {
@@ -228,11 +246,6 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 }
 
 
-
-
-
-
-
 /* contact */
 #contact{width: 100%; height: 100vh; position: relative;}
 #contact img{position: absolute; left: 50%; top: 10%;}
@@ -243,3 +256,7 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 /* top_btn */
 #top_btn{position: fixed; right: 50px; bottom: 50px; opacity: 0; transition: opacity 0.5s; z-index: 9999999;}
 #top_btn.on{opacity: 1;}
+
+@media screen and (min-width:1024px) and (max-width: 1900px) {
+    #skills .chart_bg{width: 100%;}
+}
