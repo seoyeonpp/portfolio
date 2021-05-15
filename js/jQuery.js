@@ -46,14 +46,13 @@ $(function () {
     };
 
     /* nav menu 효과 */
-    var menu = $('nav #menu li');
+    var menu = $('#menu li');
     var contents = $('#wrap section');
     menu.click(function (e) {
         var tg = $(this);
         var i = tg.index();
         var section = contents.eq(i);
         var st = section.offset().top;
-        menu.removeClass('on').eq(i).addClass('on');
         $('html,body').stop().animate({ scrollTop: st }, 1000, 'easeInCubic');
     })
 

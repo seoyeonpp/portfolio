@@ -18,9 +18,12 @@
     <div id="wrap">
         <header>
             <h1><a href="#"><img src="img/logo.png" alt="logo" width="250"></a></h1>
-            <nav>
-                <ul id="menu">
-                    <li class="on"><a href="#main_visual">HOME</a></li>
+            <div id="site_map" onclick="openMenu()">
+                <button href="#"><span></span><span></span><span></span></button>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#main_visual">HOME</a></li>
                     <li><a href="#about">ABOUT ME</a></li>
                     <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
@@ -79,12 +82,12 @@
                 <div class="chart_bg">
                     <div class="skills_wrap">
                         <ul class="tool_skills">
-                            <li class="list_tit">협업 및 데이터시각화 툴 활용가능</li>
+                            <li class="list_tit">협업 / 데이터 시각화 tool 활용 가능</li>
                             <li>Github</li>
                             <li>Slack</li>
                             <li>Airtable</li>
                             <li>Notion</li>
-                            <li>Tableau/Redash</li>
+                            <li>Tableau / Redash</li>
                         </ul>
                         <div class="chart_wrap">
                             <div class="chart">
@@ -138,10 +141,11 @@
                             <div class="main_inner"><a href="http://syportfolio97.dothome.co.kr/project1/index.html" class="hidden" target="_blank"><img src="img/project1_img.jpg" alt="project1" width="500"></a></div>
                         </div>
                         <div class="project1_right">
-                            <ul>
-                                <li class="title_bold">한국해양과학기술원 리뉴얼</li>
-                                <li class="cont_small">한국해양과학기술원 홈페이지를 리뉴얼했습니다. flexbox를 사용하여 디자인 했고 어쩌구</li>
-                            </ul>
+                            <h5 class="title_bold">#1 한국해양과학기술원</h5>
+                            <div class="cont_wrap">
+                                <p class="cont_small">한국해양과학기술원 홈페이지를 리뉴얼했습니다. flexbox를 사용하여 디자인 했고 어쩌구</p>
+                                <a href="http://syportfolio97.dothome.co.kr/project1/index.html" target="_blank" class="show_project">site</a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- //#project1 -->
@@ -149,10 +153,11 @@
                     <div id="project_wrap">
                         <h4>웹사이트 리뉴얼</h4>
                         <div class="project2_left">
-                            <ul>
-                                <li class="title_bold">서울상상나라 리뉴얼</li>
-                                <li class="cont_small">서울상상나라 홈페이지를 리뉴얼했습니다. flexbox를 사용하여 디자인 했고 어쩌구</li>
-                            </ul>
+                            <h5 class="title_bold">#2 서울상상나라</h5>
+                            <div class="cont_wrap">
+                                <p class="cont_small">한국해양과학기술원 홈페이지를 리뉴얼했습니다. flexbox를 사용하여 디자인 했고 어쩌구</p>
+                                <a href="http://syportfolio97.dothome.co.kr/project2/index.html"  target="_blank" class="show_project">site</a>
+                            </div>
                         </div>
                         <div class="project2_right">
                             <p><a href="#"><img src="img/macbook.png" alt="모니터" width="550"></a></p>
@@ -172,10 +177,11 @@
                             <div class="main_inner tablet"><a href="http://syportfolio97.dothome.co.kr/project3/index.html" class="hidden" target="_blank" ><img src="img/project3_w768.png" alt="project3" width="300"></a></div>
                         </div>
                         <div class="project3_right">
-                            <ul>
-                                <li class="title_bold">카카오 같이의가치 리뉴얼</li>
-                                <li class="cont_small">카카오 같이의가치 홈페이지를 리뉴얼했습니다. 반응형웹사이트</li>
-                            </ul>
+                            <h5 class="title_bold">#3 카카오 같이의가치</h5>
+                            <div class="cont_wrap">
+                                <p class="cont_small">한국해양과학기술원 홈페이지를 리뉴얼했습니다. flexbox를 사용하여 디자인 했고 어쩌구</p>
+                                <a href="http://syportfolio97.dothome.co.kr/project3/index.html" target="_blank" class="show_project">site</a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- //#project3 -->
@@ -190,10 +196,11 @@
                             <div class="main_inner tablet"><a href="http://syportfolio97.dothome.co.kr/project4/index.html" class="hidden" target="_blank" ><img src="img/wb_779.png" alt="project4" width="300"></a></div>
                         </div>
                         <div class="project4_right">
-                            <ul>
-                                <li class="title_bold">위니비니 리뉴얼</li>
-                                <li class="cont_small">위니비니 홈페이지를 리뉴얼했습니다. 반응형웹사이트</li>
-                            </ul>
+                            <h5 class="title_bold">#4 위니비니</h5>
+                            <div class="cont_wrap">
+                                <p class="cont_small">한국해양과학기술원 홈페이지를 리뉴얼했습니다. flexbox를 사용하여 디자인 했고 어쩌구</p>
+                                <a href="http://syportfolio97.dothome.co.kr/project4/index.html" target="_blank" class="show_project">site</a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- //#project4 -->
@@ -201,10 +208,12 @@
                     <div id="project_wrap">
                         <h4>앱 디자인</h4>
                         <div class="app_left">
-                            <ul>
-                                <li class="title_bold">앱 디자인</li>
-                                <li class="cont_small">셰프미라는 앱을 디자인 어ㅓ쩌구</li>
-                            </ul>
+                            <h5 class="title_bold">#5 앱 디자인</h5>
+                            <div class="cont_wrap">
+                                <p class="cont_small">한국해양과학기술원 홈페이지를 리뉴얼했습니다. flexbox를 사용하여 디자인 했고 어쩌구</p>
+                                <a href="https://www.figma.com/proto/JeNs2D8S4ZYpzMfp4JPq5e/chef-me?node-id=2%3A2074&scaling=scale-down&page-id=0%3A1" target="_blank" class="show_project">site</a>
+                                <a href="#" target="_blank" class="show_project sub_btn">XD</a>
+                            </div>
                         </div>
                         <div class="app_right">
                             <img class="fl" src="img/app_design_mockup.png" alt="mock up" width="180">

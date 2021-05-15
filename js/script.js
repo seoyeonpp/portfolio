@@ -13,3 +13,9 @@ Top.addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+/* 햄버거메뉴 */
+function openMenu() {
+    document.getElementById('site_map').classList.toggle('active')
+    document.getElementById('menu').classList.toggle('open')
+};
