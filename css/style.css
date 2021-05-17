@@ -248,7 +248,7 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 
 /* contact */
 #contact{width: 100%; height: 100vh; position: relative; overflow: hidden;}
-#contact img{position: absolute; right: 220px; top: 210px; z-index: 999;}
+#contact img{position: absolute; right: 19%; top: 30%; z-index: 12;}
 .bubble{background: url(../img/bubble.png) no-repeat; display: block; width: 800px; height: 340px; background-size: contain; position: absolute; top: 30%; left: 50%; transform: translateX(-50%); z-index: 1;}
 .direct{background: rgba(245,245,245,.5); border-radius: 50px; padding: 30px; width: 45%; position: absolute; top: 60%; left: 50%; transform: translate(-50%,-60%); z-index: 2;}
 .direct p{text-align: center; margin-bottom: 50px; color: rgba(51, 51, 51,0.8); text-shadow: 1px 1px 0 #fff,0 0 0 #000; font-size: 1.5rem; font-weight: bold;}
