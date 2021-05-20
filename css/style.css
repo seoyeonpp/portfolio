@@ -164,7 +164,7 @@ section h2::first-letter{font-size: 4rem; color: #ff926c;}
 .hidden{display: block; width: 496px; height: 280px; position: relative; top: -392px; left: 27px; overflow: hidden;}
 .hidden>img{display: block; position: absolute; top: 0; left: 0;}
 
-#project2 .hidden{width: 459px; height: 287px; top: -336px; left: 45px;}
+#project2 .hidden{width: 460px; height: 288px; top: -338px; left: 45px;}
 #project2 .hidden>img{width: 100%;}
 #project3 .hidden{width: 496px; height: 282px; top: -460px; left: 28px;}
 #project3 .mobile .hidden{top: -570px; left: 9px; width: 132px; height: 278px; border-radius: 14px;}
