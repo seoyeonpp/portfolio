@@ -30,7 +30,7 @@
         <header>
             <h1><a href="#"><img src="img/logo.png" alt="logo" width="250"></a></h1>
             <div id="site_map" onclick="openMenu()">
-                <button href="#"><span></span><span></span><span></span></button>
+                <button><span></span><span></span><span></span></button>
             </div>
             <nav id="menu">
                 <ul>
@@ -42,7 +42,7 @@
                 </ul>
             </nav>
         </header>
-        <section id="section">
+        <section>
             <div id="main_visual">
                 <img src="img/profile.png" alt="profile" class="main_profile" width="700">
                 <a href="img/resume_parkseoyeon.pdf" download>
@@ -55,11 +55,13 @@
                             <li>웹 - 퍼블리셔</li>
                         </ul>
                     </div>
-                    <h3><br><p class="typing"></p> <br>박서연의 포트폴리오 <br><span>스타 - 트</span></h3>
+                    <div class="portfolio_title">
+                        <p class="typing"></p> <h3>박서연의 포트폴리오 <br><span>스타 - 트</span></h3>
+                    </div>
                 </div>
             </div><!-- //#main_visual -->
         </section>
-        <section id="section">
+        <section>
             <div id="about">
                 <h2>about me</h2>
                 <div class="text">
@@ -87,7 +89,7 @@
                 </div>
             </div><!-- //#about -->
         </section>
-        <section id="section">
+        <section>
             <div id="skills">
                 <h2>skills</h2>
                 <div class="chart_bg">
@@ -141,11 +143,11 @@
                 </div>
             </div><!-- //#skills -->
         </section>
-        <section id="section">
+        <section>
             <div id="projects">
                 <h2>projects</h2>
                 <div id="project1">
-                    <div id="project_wrap">
+                    <div class="project_wrap">
                         <h4>웹사이트 리뉴얼</h4>
                         <div class="project1_left">
                             <p><a href="#"><img src="img/imac.png" alt="모니터" width="550"></a></p>
@@ -165,7 +167,7 @@
                     </div>
                 </div><!-- //#project1 -->
                 <div id="project2">
-                    <div id="project_wrap">
+                    <div class="project_wrap">
                         <h4>웹 접근성</h4>
                         <div class="project2_left">
                             <h5 class="title_bold"><span>#2</span> 서울상상나라</h5>
@@ -184,7 +186,7 @@
                     </div>
                 </div><!-- //#project2 -->
                 <div id="project3">
-                    <div id="project_wrap">
+                    <div class="project_wrap">
                         <h4>반응형 퍼블리싱</h4>
                         <div class="project3_left">
                             <p><a href="#"><img src="img/imac.png" alt="모니터" width="550"></a></p>
@@ -206,10 +208,10 @@
                     </div>
                 </div><!-- //#project3 -->
                 <div id="project4">
-                    <div id="project_wrap">
+                    <div class="project_wrap">
                         <div class="project4_left">
                             <p><a href="#"><img src="img/macbook.png" alt="반응형 모니터" width="550"></a></p>
-                            <div class="main_inner"><a href="http://syportfolio97.dothome.co.kr/project4/index.html" class="hidden" target="_blank"><img src="img/wb_1924.png" alt="project4" width="500" height="100%"></a></div>
+                            <div class="main_inner height"><a href="http://syportfolio97.dothome.co.kr/project4/index.html" class="hidden" target="_blank"><img src="img/wb_1924.png" alt="project4" width="500"></a></div>
                             <p class="inner2"><a href="#"><img src="img/mobile.png" alt="모바일" width="150"></a></p>
                             <div class="main_inner mobile"><a href="http://syportfolio97.dothome.co.kr/project4/index.html" onclick="window.open(this.href,'new','top=80,left=200,width=411,height=731,scrollbars=yes'); return false" class="hidden" target="_blank" ><img src="img/wb_375.png" alt="project4" width="150"></a></div>
                             <p class="inner3"><a href="#"><img src="img/tablet.png" alt="태블릿" width="300"></a></p>
@@ -227,7 +229,7 @@
                     </div>
                 </div><!-- //#project4 -->
                 <div id="app_design">
-                    <div id="project_wrap">
+                    <div class="project_wrap">
                         <h4>앱 디자인</h4>
                         <div class="app_left">
                             <h5 class="title_bold"><span>#5</span> 앱 디자인</h5>
@@ -248,7 +250,7 @@
                 </div><!-- //#app_design -->
             </div><!-- //#projects -->
         </section>
-        <section id="section">
+        <section>
             <div id="contact">
                 <h2>contact</h2>
                 <img src="img/contact_profile.png" alt="contact" width="200">
